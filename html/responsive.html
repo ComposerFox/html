@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 100%;
+            text-align: center;
+            border: 1px solid red;
+            font-size: 18px;
+        }
+
+        .title {
+            width: 300px;
+            height: 100px;
+            margin: 0px;
+            padding: 10px;
+            border: 1px solid red;
+            font-size: 24px;
+        }
+
+        .content {
+            width: 600px;
+            height: 100px;
+            margin: 0px;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .content > span {
+            width: 100px;
+            border: 1px solid red;
+            margin: 30px;
+            padding: 10px;
+        }
+
+        @media screen and (min-width: 800px) {
+            .title {
+                float: none;
+                margin: auto;
+            }
+
+            .content {
+                float: none;
+                margin: auto;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .parent {
+                display: inline-block;
+            }
+
+            .title {
+                float: left;
+            }
+
+            .content {
+                float: right;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="title">
+            <div>nudge</div>
+        </div>
+        <div class="content">
+            <span>Home</span>
+            <span>News</span>
+            <span>Contact</span>
+            <span>About</span>
+        </div>
+    </div>
+</body>
+
+</html>

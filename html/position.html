@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid red;
+        }
+        .parent {
+            width: 100px;
+            margin: 50px;
+            padding: 20px;
+            background: green;
+            color: white;
+        }
+        .child {
+            background: blue;
+        }
+        .relative {
+            position: relative;
+            top: 50px;
+            left: -50px;
+            color: black;
+        }
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            /* right: 0px; */
+            /* bottom: 0px; */
+        }
+        .fixed {
+            position: fixed;
+            right: 100px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "parent" id = "top">
+        부모
+        <div class = "child">
+            자식<br>
+            다음줄
+        </div>
+        <div>
+            글씨 몇개
+        </div>
+    </div>
+    <div class = "parent">
+        부모
+        <div class = "child relative">
+            자식<br>
+            다음줄
+        </div>
+        <div>
+            글씨 몇개
+        </div>
+    </div>
+    <div class = "parent">
+        부모
+        <div class = "child absolute">
+            자식<br>
+            다음줄
+        </div>
+        <div>
+            글씨 몇개
+        </div>
+    </div>
+    <div class = "parent" style = "position: relative;">
+        부모
+        <div class = "child absolute">
+            자식<br>
+            다음줄
+        </div>
+        <div>
+            글씨 몇개
+        </div>
+    </div>
+    <div class = "fixed">
+        <a href = "#top">맨위로</a>
+    </div>
+</body>
+</html>

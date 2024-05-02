@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'HakgyoansimGaeulsopungB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimGaeulsopungB.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+        [type = "checkbox"]:checked + span {
+            text-decoration: line-through;
+        }
+
+        .test1 {
+            border: 1px solid red;
+            width: 200px;
+        }
+
+        .nowrap {
+            white-space: nowrap;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .word {
+            word-wrap: break-word;
+        }
+
+        .word-b {
+            word-break: break-all;
+        }
+        .wf {
+            font-family: 'HakgyoansimGaeulsopungB';
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>
+                <input type="checkbox">
+                <span>할일 1</span>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>할일 2</span>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>할일 3</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="test1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae sapiente quo unde magni consequuntur placeat
+        rerum aperiam, animi voluptas alias nostrum itaque eveniet eaque. Laudantium explicabo molestias alias error
+        enim.
+    </div>
+    <div class="test1 nowrap"
+        title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae sapiente quo unde magni consequuntur placeat rerum aperiam, animi voluptas alias nostrum itaque eveniet eaque. Laudantium explicabo molestias alias error enim.">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae sapiente quo unde magni consequuntur placeat
+        rerum aperiam, animi voluptas alias nostrum itaque eveniet eaque. Laudantium explicabo molestias alias error
+        enim.
+    </div>
+    <div class="test1 word">
+        Loremsdfs1234sdddddddd2352ddddddd235352ddddddddd315515dddddddddddddsss132213ssssssssss21331ssssss ipsum, dolor
+        sit amet consectetur adipisicing elit. Molestiae sapiente quo unde magni consequuntur placeat rerum aperiam,
+        animi voluptas alias nostrum itaque eveniet eaque. Laudantium explicabo molestias alias error enim.
+    </div>
+    <div class="test1 word-b">
+        Loremsdfs1234sdddddddd2352ddddddd235352ddddddddd315515dddddddddddddsss132213ssssssssss21331ssssss ipsum, dolor
+        sit amet consectetur adipisicing elit. Molestiae sapiente quo unde magni consequuntur placeat rerum aperiam,
+        animi voluptas alias nostrum itaque eveniet eaque. Laudantium explicabo molestias alias error enim.
+    </div>
+    
+    <div class = "test1 wf">
+        봄여름가을겨울
+    </div>
+</body>
+
+</html>

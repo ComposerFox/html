@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            border: 1px solid green;
+            height: 500px;
+
+            display: flex;
+            /* flex-direction: row-reverse; 메인축을 오른쪽으로 뒤집음 */
+            /* flex-direction: column; 위에서 아래로 수직 배치된다. */
+            /* flex-direction: column-reverse; 아래에서 위로 뒤집음  */
+
+            /* flex-wrap: wrap; inline-block 과 비슷함 */
+            
+            /* justify-content: flex-end; 우측으로 정렬 */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; 남은공간 균등분배 */
+
+            /* align-items: center; 아이템요소 세로중앙정렬 */
+
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+            /* align-content: space-evenly; */
+        }
+        .flex-container .flex-item {
+            border: 1px solid red;
+            background-color: brown;
+            color: #fff;
+
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item" style = "order: 1">2</div>
+        <div class="flex-item" style = "order: -1; flex-shrink: 0;">3</div>
+        <div class="flex-item" style = "flex-grow: 3; flex-shrink: 4; min-width: 100px;">4</div>
+        <div class="flex-item" style = "flex-grow: 1; flex-shrink: 2;">5</div>
+    </div>
+</body>
+
+</html>

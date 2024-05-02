@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(https://poiemaweb.com/img/bg/stock-photo-125979219.jpg);
+            background-attachment: fixed;
+            height: 2000px;
+        }
+        #image {
+            height: 200px;
+            border: 1px solid red;
+            background-image: url("http://poiemaweb.com/img/bg/dot.png");
+            background-repeat: no-repeat;
+        }
+        #size {
+            width:50px;
+            height: 100px;
+            background-image: url(https://poiemaweb.com/img/bg/stock-photo-125979219.jpg);
+            /* background-size: 100px 150px; */
+            /* background-size: 100% 100%; */
+            /* background-size: cover; */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid blue;
+        }
+        #color { 
+            height: 100px;
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div id = "image"></div>
+    
+    <div id = "size"></div>
+
+    <div id = "color"></div>
+    
+</body>
+
+</html>
