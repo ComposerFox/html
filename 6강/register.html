@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>회원가입 폼</title>
+ </head>
+ <body>
+  
+	<form name = "frm" method = "post" action = "input_save.jsp">
+		
+		<table width = "800"
+			   cellpadding = "5"
+			   cellspacing = "1"
+			   bgcolor = "#cccccc"
+			   align = "center">
+			<tr bgcolor = "#ffffff">
+				<th>아이디</th>
+				<td><input type = "text" name = "user_id" value = "">
+					<input type = "button" value = "중복체크">
+				</td>
+			</tr>
+			<tr bgcolor = "#ffffff">
+				<th>패스워드</th>
+				<td><input type = "password" name = "user_password" value = ""></td>
+			</tr>
+			<tr bgcolor = "#ffffff">
+				<th>이름</th>
+				<td><input type = "text" name = "user_name" value = ""></td>
+			</tr>
+			<tr bgcolor = "#ffffff">
+				<th>성별</th>
+				<td><input type = "radio" name = "gender" value = "">남
+					<input type = "radio" name = "gender" value = "">여</td>
+			</tr>
+			<tr bgcolor = "#ffffff">
+				<th>생일</th>
+				<td><select name = "year">
+
+				<?
+					for( $y = 1920; $y <= 2020; $y++ ) { 
+				?>
+						<option value = "<?=$y?>"><?=$y?>년</option>
+				<?
+				}
+				?>
+					</select>
+					<select name = "month">
+						<option value = "1">1월</option>
+						<option value = "2">2월</option>
+						<option value = "3">3월</option>
+					</select>
+					<select name = "day">
+						<option value = "1">1일</option>
+						<option value = "2">2일</option>
+						<option value = "3">3일</option>
+					</select>
+				</td>
+			</tr>
+			<tr bgcolor = "#ffffff">
+				<th>주소</th>
+				<td><input type = "text" name = "user_addr" value = ""></td>
+			</tr>
+			<tr bgcolor = "#ffffff">
+				<th>취미</th>
+				<td>
+					<input type = "checkbox" name = "hobby" value = "축구">축구,
+					<input type = "checkbox" name = "hobby" value = "야구">야구,
+					<input type = "checkbox" name = "hobby" value = "농구">농구
+			<tr bgcolor = "#ffffff">
+				<th colspan = "2">
+					<input type = "submit" value = "저장">
+					<input type = "reset" value = "재설정">
+				</th>
+			</tr>
+		</table>
+	</form>
+
+ </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>일반 게시판</title>
+ </head>
+<style>
+body {
+	font-size:12px;
+	font-family:맑은고딕,돋움체;
+	color:#3b3b3b;
+}
+.div_title {
+	width:900px;
+	height:40px;
+	font-size:30px;
+	font-weight:bold;
+	color:#009900;
+	margin-top:20px;
+	padding-bottom:50px;
+	border-bottom:1px solid #cccccc;
+}
+.select {
+	width:900px;
+	height:30px;
+	padding-top:50px;
+	text-align:right;
+}
+.select1{
+	border:1px solid;
+	padding:10px;
+}
+.select2{
+	border:1px solid;
+	padding:10px;
+}
+.select3{
+	border:1px solid;
+	padding:10px;
+	background-color:#3a3a3a;
+	color:#ececec;
+}
+table {
+	width:900px;
+	border-top:1px solid #00cc66;
+	border-collapse:collapse;
+	margin-top:20px;
+}
+th,td {
+	padding:10px;
+	font-size:14px;
+}
+th {
+	border-bottom:1px solid #59ff83;
+	background-color:#d4d4d4;
+}
+td {
+	border-bottom:1px solid #444444;
+	text-align:center;
+}
+a {
+	text-decoration-line:none;
+}
+.board_paging{
+	width:900px; 
+	text-align:center; 
+	margin-top:20px;
+}
+.board_paging ul li{
+	display:inline-block; /* 가로배치 */
+}
+.board_paging ul li a{
+	display:block; 
+	width:25px; 
+	height:25px; 
+	border:1px solid #bfbfbf; 
+	text-align:center; 
+	line-height:25px; 
+	color:#777;
+}
+.board_paging ul li a:hover, 
+.board_paging ul li a.active{
+	background:#00816e; 
+	font-weight:600; 
+	color:#fff; 
+	border:1px solid #00816e;
+}
+</style>
+ <body>
+  
+<form name = "frm" method = "post" action = "">
+
+<div>
+
+<div class = "div_title">
+	일반 게시판
+</div>
+<div class = "select">
+	<select name = "select" class = "select1">
+		<option value = "s1">전체</option>
+		<option value = "s2" selected>제목</option>
+		<option value = "s3">글쓴이</option>
+		<option value = "s4">내용</option>
+	</select>
+		<input type = "text" name = "search" class = "select2">
+		<button type = "submit" value = "" class = "select3">검색</button>
+</div>
+<table>
+	<tr>
+		<th>번호</th>
+		<th>제목</th>
+		<th>글쓴이</th>
+		<th>작성일</th>
+		<th>조회</th>
+		<th>파일</th>
+	</tr>
+	<tr>
+		<td>352</td>
+		<td>
+			<a href = "https://www.daegu.ac.kr/article/DG183/list#none">			
+						[전자정보기사업단]2023년 RISE 아카데미
+			</a>
+		</td>
+		<td>김광동</td>
+		<td>2023-11-20</td>
+		<td>4</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>351</td>
+		<td>
+			<a href = "https://www.daegu.ac.kr/article/DG183/list#none">
+						2023 제1회 달성 창업아이디어 공모전
+			</a>
+		</td>
+		<td>김광동</td>
+		<td>2023-11-15</td>
+		<td>8</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>350</td>
+		<td>
+			<a href = "https://www.daegu.ac.kr/article/DG183/list#none">
+						[스벅 기프티콘 제공] 임당유니콘파크 수요조사
+			</a>
+		</td>
+		<td>김민기</td>
+		<td>2023-11-10</td>
+		<td>21</td>
+		<td></td>
+	</tr>
+</table>
+
+<div class="board_paging">
+	<ul>
+		<li>
+			<a class="active">1</a>
+		</li>
+		<li>
+			<a href="/article/DG183/list?pageIndex=2&">2</a>
+		</li>
+		<li>
+			<a href="/article/DG183/list?pageIndex=3&">3</a>
+		</li>
+		<li>
+			<a href="/article/DG183/list?pageIndex=4&">4</a>
+		</li>
+		<li>
+			<a href="/article/DG183/list?pageIndex=5&">5</a>
+		</li>
+		<li>
+			<a href="/article/DG183/list?pageIndex=6&">6</a>
+		</li>
+		<li>
+			<a href="/article/DG183/list?pageIndex=7&">7</a>
+		</li>
+		<li>
+			<a href="/article/DG183/list?pageIndex=8&">8</a>
+		</li>
+		<li>
+			<a href="/article/DG183/list?pageIndex=9&">9</a>
+		</li>
+		<li>
+			<a href="/article/DG183/list?pageIndex=10&">10</a>
+		</li>
+		<li>
+			<a href="/article/DG183/list?pageIndex=2&" title="다음리스트">&gt;</a>
+		</li>
+		<li>
+			<a href="/article/DG183/list?pageIndex=36&" title="맨 끝페이지">&gt;&gt;</a>
+		</li>
+	</ul>
+</div>
+
+</div>
+
+</form>
+
+ </body>
+</html>

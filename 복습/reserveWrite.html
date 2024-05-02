@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>숙박예약화면</title>
+ </head>
+<style>
+ 
+body {
+ 	font-size:12px;
+	font-family:맑은고딕,굴림체;
+	color:#313131;
+	/* font-weight:bold; */
+}
+table {
+	width:600px;
+	border:1px solid #555555;
+	border-collapse:collapse; /* cell 사이의 공간 제거 */
+}
+th,td {
+	border:1px solid #555555;
+	padding:5px;
+}
+.div_title {
+	font-size:20px;
+	font-weight:bold;
+	color:#ffffff;
+	width:600px;
+	height:50px;
+	text-align:center;
+	background-color:#017e0e;
+	margin-bottom:10px;
+	letter-spacing:5px; /* 자간 (글자간격) */
+	line-height:2.4; /* line간격 (글자기준으로 위의 간격) */
+}
+.div_button {
+	width:600px;
+	text-align:center;
+	background-color:yellow;
+	margin-top:10px;
+}
+input,select,button {
+	font-size:12px;
+	font-family:맑은고딕,굴림체;
+}
+button {
+	width:100px;
+	height:40px;
+	background-color:pink;
+	border:1px solid #cccccc;
+}
+.input1 {
+	width:96%;
+}
+
+</style>
+ <body>
+ <form name = "frm" method = "post" action = "reserveWriteSave.jsp">
+ 
+ <div class = "div_title">
+	숙박예약 등록화면
+ </div>
+
+ <table>
+	<colgroup>
+		<col width = "30%"/>
+		<col width = "*"/>
+	</colgroup>
+	<tr>
+		<th>고유번호</th>
+		<td>
+			<input type = "text" name = "uid" value = "1001" readonly class = "input1">
+		</td>
+	</tr>
+	<tr>
+		<th>아이디</th>
+		<td>
+			<input type = "text" name = "userid" autofocus placeholder = "아이디를 입력해주세요." class = "input1">
+		</td>
+	</tr>
+	<tr>
+		<th>이름</th>
+		<td>
+			<input type = "text" name = "name" placeholder = "이름을 입력해주세요." class = "input1">
+		</td>
+	</tr>
+	<tr>
+		<th>생년월일</th>
+		<td>
+			<input type = "date" name = "birthday">
+		</td>
+	</tr>
+	<tr>
+		<th>핸드폰</th>
+		<td>
+			<select name = "mobile1">
+				<option value = "010">010</option>
+				<option value = "011">011</option>
+				<option value = "015">015</option>
+			</select>
+			<input type = "number" name = "mobile2">
+			("-"없이 작성해주세요.)
+		</td>
+	</tr>
+	<tr>
+		<th>기간</th>
+		<td>
+			<input type = "date" name = "sdate">
+			~
+			<input type = "date" name = "edate">
+		</td>
+	</tr>
+	<tr>
+		<th>방번호</th>
+		<td>
+			<select name = "rnumber">
+				<option value = "101">101호</option>
+				<option value = "102" selected>102호</option>
+				<option value = "103">103호</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<th>등록일</th>
+		<td>
+			<input type = "date" name = "rdate" value = "2023-11-20">
+		</td>
+	</tr>
+ 
+ </table>
+ <div class = "div_button">
+ 	<!-- <input type = "submit" value = "예약저장">
+	<input type = "reset" value = "다시쓰기">
+	<input type = "button" value = "목록으로"> -->
+	<button type = "submit">예약저장</button>
+	<button type = "reset">다시쓰기</button>
+	<button type = "button">목록으로</button>
+ </div>
+
+ </form>
+ </body>
+</html>

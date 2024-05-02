@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>friendModify</title>
+  <link rel = "stylesheet" href = "c:html/friend/layout.css">
+ </head>
+
+ <body>
+  
+	<!-- Header S -->
+	<div class = "header">
+	
+				 친구관리
+	
+	</div>
+	<!-- Header E -->
+
+	<!-- Menu S -->
+	<div class = "menu">
+	&nbsp;&nbsp;&nbsp;
+	<a href = "friendWrite.html">회원등록</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = "friendList.html">회원목록조회/수정</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = "friendMylist.html">친구현황</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href = "friendIndex.html">홈으로..</a>
+	</div>
+	<!-- Menu E -->
+
+	<!-- Section S -->
+	
+	<div class = "section">
+	<br>
+		<h2 align = "center">친구수정</h2>
+		<form name = "frd" method = "post" action = "">
+		<table border = "1"
+			   width = "800"
+			   cellpadding = "5"
+			   cellspacing = "1"
+			   align = "center">
+			<tr>
+				<th bgcolor = "#ffff80">회원번호</th>
+				<td>
+					<input type = "text" name = "friend_number" value = "1000" readonly>
+				</td>
+			</tr>
+			<tr>
+				<th bgcolor = "#ffff80">회원ID</th>
+				<td>
+					<input type = "text" name = "friend_id" value = "lee" readonly>
+				</td>
+			</tr>
+			<tr>
+				<th bgcolor = "#ffff80">이름</th>
+				<td>
+					<input type = "text" name = "friend_name" value = "이성현" readonly>
+				</td>
+			</tr>
+			<tr>
+				<th bgcolor = "#ffff80" height = "80">등급</th>
+				<td>
+					<select name = "class" size = "4">
+						<option value = "class1">특별회원</option>
+						<option value = "class2">우수회원</option>
+						<option value = "class3">일반회원</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th bgcolor = "#ffff80">취미</th>
+				<td>
+					<input type = "checkbox" name = "hobby" checked>독서
+					<input type = "checkbox" name = "hobby" checked>운동
+					<input type = "checkbox" name = "hobby" checked>영화
+				</td>
+			</tr>
+			<tr>
+				<th bgcolor = "#ffff80">등록일자</th>
+				<td>
+					<input type = "text" name = "date" value = "2000/09/16" readonly>
+				</td>
+			</tr>
+		</table>
+		<br>
+				<div style = "text-align:center; margin-top:10px;">
+					<input type = "submit" value = "등록">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type = "submit" value = "조회">
+				</div>
+		</form>
+	</div>
+
+					
+					
+		
+		
+	<!-- Section E -->
+ </body>
+</html>
